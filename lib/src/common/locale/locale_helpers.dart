@@ -80,20 +80,6 @@ class VoiceLocaleHelpers {
   }
 
   static String? formatName(String? language, String? script, String? country) {
-    var [hasLanguage, hasScript, hasCountry] = [
-      language != null && language.isNotEmpty,
-      script != null && script.isNotEmpty,
-      country != null && country.isNotEmpty
-    ];
-
-    if (hasLanguage && hasScript && hasCountry && script != country) {
-      return '$language ($script, $country)';
-    } else if (hasLanguage && hasCountry) {
-      return '$language ($country)';
-    } else if (hasLanguage) {
-      return language;
-    } else {
-      return null;
-    }
+   return "";
   }
 }
