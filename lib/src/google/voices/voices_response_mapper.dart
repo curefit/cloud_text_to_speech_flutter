@@ -22,12 +22,12 @@ class VoicesResponseMapperGoogle extends BaseResponseMapper {
               .map((e) => VoiceGoogle.fromJson(e as Map<String, dynamic>))
               .toList(growable: false);
 
-          voices = Helpers.removeVoiceDuplicates(voices);
-
-          voices = Helpers.sortVoices(voices);
-
-          voices =
-              Helpers.mapVoiceNames(voices, VoiceNames.male, VoiceNames.female);
+          // voices = Helpers.removeVoiceDuplicates(voices);
+          //
+          // voices = Helpers.sortVoices(voices);
+          //
+          // voices =
+          //     Helpers.mapVoiceNames(voices, VoiceNames.male, VoiceNames.female);
 
           return VoicesSuccessGoogle(voices: voices);
         }
