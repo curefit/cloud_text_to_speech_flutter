@@ -4,15 +4,15 @@ version: 2.3.2
 repository: https://github.com/markokosticdev/cloud_text_to_speech_flutter
 
 environment:
-  sdk: '>=3.0.3 <4.0.0'
-  flutter: ">=1.17.0"
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: ">=2.0.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   http:
   json_annotation: ^4.8.1
-  build_runner: ^2.4.6
+  build_runner: ^2.4.9
   locale_names: ^1.1.1
   xml: ^6.3.0
   sigv4:
