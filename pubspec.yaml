@@ -15,7 +15,11 @@ dependencies:
   build_runner: ^2.4.6
   locale_names: ^1.1.1
   xml: ^6.3.0
-  sigv4: ^5.0.0
+  sigv4:
+    git:
+      ref: 0570fb1e8d912d10dab0f6ef7befbcd861149cc8
+      url: git@github.com:curefit/sigv4.git
+
 
 dev_dependencies:
   flutter_test:
